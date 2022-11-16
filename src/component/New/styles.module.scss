@@ -1,0 +1,33 @@
+.container {
+  background-color: #f4fafb;
+  padding: 5rem 0;
+  .content {
+    transform: translateY(35%);
+    h1 {
+      font-size: 28px;
+      font-weight: 400;
+      color: #000000;
+      font-family: sans-serif;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      padding: 20px 0;
+      border: none;
+      background-color: unset;
+      border-bottom: 1px solid black;
+      font-size: 14px;
+      cursor: pointer;
+      .btnText {
+        padding-right: 20px;
+      }
+    }
+  }
+  .img {
+    img {
+      width: 100%;
+      height: calc(100% + 10rem);
+      object-fit: cover;
+      transform: translateY(-5rem);
+    }
+  }
+}

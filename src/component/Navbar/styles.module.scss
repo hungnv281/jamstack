@@ -1,0 +1,29 @@
+.navContainer {
+  width: 100%;
+  height: 3.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  position: fixed;
+  top: 3.8rem;
+  color: white;
+  background-color: cadetblue;
+  padding: 0 30px;
+  z-index: 9;
+  .colContent {
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    &:nth-child(2) {
+      font-weight: bold;
+    }
+    a + a {
+      margin-left: 1rem;
+    }
+  }
+}
+.isScroll {
+  background: white;
+}

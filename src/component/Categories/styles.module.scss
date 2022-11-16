@@ -1,0 +1,34 @@
+.container {
+  background: #f4fafb;
+  padding-bottom: 200px;
+  padding-top: 10rem;
+  .title {
+    padding-bottom: -3rem;
+    z-index: 1;
+  }
+  .listCategory {
+    display: flex;
+    justify-content: center;
+    .itemCategory {
+      width: 30%;
+      max-width: 430px;
+      height: 600px;
+      padding: 0 5px;
+      .imgCategory {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .productName {
+        font-size: 1.5rem;
+      }
+    }
+    :nth-child(2) {
+      margin-top: 40px;
+    }
+  }
+}

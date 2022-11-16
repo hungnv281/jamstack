@@ -1,0 +1,28 @@
+.container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  h1 {
+    width: 80%;
+    max-width: 800px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #000000;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    padding: 20px 0;
+    border: none;
+    background-color: unset;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    cursor: pointer;
+    .btnText {
+      padding-right: 20px;
+    }
+  }
+}
