@@ -1,16 +1,23 @@
 import { ShoppingOutlined } from "@ant-design/icons";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
 
 function Navbar() {
+  const [isScroll, setIsScroll] = useState(false);
+  const handleScroll = (event) => {
+    window.scrollY !== 0 ? setIsScroll(true) : setIsScroll(false);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <div
       className={
-        window.scrollY === 0
-          ? styles.navContainer
-          : `${styles.navContainer} ${styles.isScroll}`
+        isScroll
+          ? `${styles.navContainer} ${styles.isScroll}`
+          : styles.navContainer
       }
-      // onScroll={() => setIsScroll(true)}
+      onScroll={handleScroll}
     >
       <div className={styles.colContent}>
         <div className={styles.link}>

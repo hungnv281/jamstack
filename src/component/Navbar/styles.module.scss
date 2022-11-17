@@ -8,12 +8,13 @@
   position: fixed;
   top: 3.8rem;
   color: white;
-  background-color: cadetblue;
+  background: none;
   padding: 0 30px;
   z-index: 9;
+  color: white;
+
   .colContent {
     a {
-      color: white;
       text-decoration: none;
     }
     &:nth-child(2) {
@@ -26,4 +27,8 @@
 }
 .isScroll {
   background: white;
+  color: #333;
+  a {
+    color: #333;
+  }
 }
