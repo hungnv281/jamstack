@@ -38,7 +38,15 @@ function Product() {
   return (
     <Row className={styles.container}>
       {productsImages.map((product, index) => (
-        <Col className={styles.productItem} key={index} span={6}>
+        <Col
+          className={styles.productItem}
+          key={index}
+          xs={24}
+          sm={11}
+          md={11}
+          lg={5}
+          xl={5}
+        >
           <div className={styles.imgProduct}>
             <img src={product.img} alt="productImg" />
           </div>

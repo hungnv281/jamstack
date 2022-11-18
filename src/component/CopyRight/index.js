@@ -8,7 +8,7 @@ function CopyRight() {
       <Col className={styles.deploy} span={6} offset={2}>
         <p>DEPLOY TO NETLIFY - CLONE IN GITHUB - CONTRIBUTE</p>
       </Col>
-      <Col className={styles.copyRight} span={4} offset={10}>
+      <Col className={styles.copyRight} span={6} offset={7}>
         <p>© 2022 CHEC/COMMERCE.JS.</p>
       </Col>
     </Row>

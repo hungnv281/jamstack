@@ -1,6 +1,6 @@
 .navContainer {
   width: 100%;
-  height: 3.8rem;
+  height: 4.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,23 +12,62 @@
   padding: 0 30px;
   z-index: 9;
   color: white;
+  transition: all 1s;
+  font-weight: bold;
 
   .colContent {
     a {
       text-decoration: none;
+      color: #fff;
     }
     &:nth-child(2) {
-      font-weight: bold;
+      display: flex;
+    }
+
+    &:nth-child(3) {
+      display: flex;
+      &:nth-child(2) {
+        &::after {
+          content: "0";
+          width: 10px;
+          height: 10px;
+          color: #333;
+        }
+      }
     }
     a + a {
       margin-left: 1rem;
+    }
+    .menuIcon {
+      display: none;
+      width: 2rem;
+      img {
+        padding-right: 5px;
+        width: 100%;
+      }
+      // flex-wrap: nowrap;
     }
   }
 }
 .isScroll {
   background: white;
   color: #333;
-  a {
-    color: #333;
+  border-bottom: 1px solid #333;
+
+  .colContent {
+    a {
+      color: #333;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .colContent {
+    .menuIcon {
+      display: inline-block;
+    }
+    &:first-child {
+      display: none;
+    }
   }
 }

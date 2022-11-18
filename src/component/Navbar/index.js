@@ -25,10 +25,15 @@ function Navbar() {
           <a href="/">About</a>
         </div>
       </div>
-      <div className={styles.colContent}>commerce</div>
+      <div className={styles.colContent}>
+        <div className={styles.menuIcon}>
+          <img src="/images/menu-icon.jpg" alt="img" />
+        </div>
+        <p>commerce</p>
+      </div>
       <div className={styles.colContent}>
         <a className={styles.btn} href="/">
-          Theme Info
+          Login
         </a>
         <a className={styles.btn} href="/">
           <ShoppingOutlined />

@@ -14,7 +14,9 @@ function Banner() {
           <div className={styles.slideItem}>
             <h1>The care you've always needed</h1>
             <h2>A RANGE OF PRODUCTS FOR YOU</h2>
-            <Button className={styles.btn}>Shop now</Button>
+            <Button className={styles.btn} type="default">
+              Shop now
+            </Button>
           </div>
         </div>
       </div>

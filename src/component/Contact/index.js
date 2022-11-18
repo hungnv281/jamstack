@@ -38,7 +38,15 @@ function Contact() {
 
       <Row className={styles.img}>
         {list?.map((item, index) => (
-          <Col className={styles.item} key={index} span={4}>
+          <Col
+            className={styles.item}
+            key={index}
+            xs={11}
+            sm={7}
+            md={7}
+            lg={4}
+            xl={4}
+          >
             <img src={item.img} alt="img" />
           </Col>
         ))}

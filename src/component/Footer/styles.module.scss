@@ -4,6 +4,7 @@
   // justify-content: space-between;
   // align-items: center;
   // padding: 5rem 10rem;
+  justify-content: center;
   padding-bottom: 3rem;
   .listWrap {
     display: flex;
@@ -45,6 +46,22 @@
     display: flex;
     .arrow {
       transform: translateX(-1.5rem);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 571px) {
+  .container {
+    padding: 0 4rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    padding: 0 4rem;
+    .listWrap {
+      margin-bottom: 2rem;
     }
   }
 }

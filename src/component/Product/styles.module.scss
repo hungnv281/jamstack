@@ -3,11 +3,10 @@
   font-family: sans-serif;
   padding: 5rem 10% 0;
   background: #ffffff;
-  flex-wrap: inherit;
-
+  flex-wrap: wrap;
+  justify-content: center;
   .productItem {
-    width: 100%;
-    transform: translateX(-1.5rem);
+    // transform: translateX(-1.5rem);
     padding-bottom: 7rem;
     .imgProduct {
       img {
@@ -32,6 +31,14 @@
     }
     &:not(:first-child) {
       margin-left: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    .productItem {
+      padding-bottom: 3rem;
     }
   }
 }

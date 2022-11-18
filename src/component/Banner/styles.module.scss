@@ -1,6 +1,6 @@
 .container {
   .slideItem {
-    height: 780px;
+    height: 48.75rem;
     background-image: url("../../../public/images/slide_1.jpg");
 
     background-size: cover;
@@ -33,19 +33,21 @@
       margin-bottom: 40px;
       color: white;
     }
+    :global {
+      .ant-btn {
+        height: 0;
+      }
+    }
     .btn {
       font-size: 1rem;
       background-color: unset;
       color: white;
-      border-color: white;
       padding: 20px 48px;
       cursor: pointer;
       transition: all 0.5s;
-      height: 0;
       &:hover {
         background-color: rgba(245, 245, 245, 0.096);
       }
-      // line-height: 40px;
     }
   }
 

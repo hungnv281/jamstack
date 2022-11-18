@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 function Footer() {
   return (
     <Row className={styles.container}>
-      <Col className={styles.listWrap} span={6} offset={2}>
+      <Col className={styles.listWrap} xs={24} sm={11} md={11} lg={5} xl={5}>
         <p className={styles.title}>Commerce.js</p>
         <div className={styles.list}>
           <ul>
@@ -29,7 +29,7 @@ function Footer() {
           </ul>
         </div>
       </Col>
-      <Col className={styles.listWrap} span={6} offset={2}>
+      <Col className={styles.listWrap} xs={24} sm={11} md={11} lg={5} xl={5}>
         <p className={styles.title}>Follow us</p>
         <div className={styles.list}>
           <ul>
@@ -52,7 +52,7 @@ function Footer() {
           </ul>
         </div>
       </Col>
-      <Col className={styles.commerce} span={6}>
+      <Col className={styles.commerce} xs={24} sm={24} md={11} lg={5} xl={5}>
         <p className={styles.title}>Newsletter</p>
         <div className={styles.wrapper}>
           <Input placeholder="email address" className={styles.emailInput} />

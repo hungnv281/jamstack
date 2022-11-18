@@ -5,8 +5,8 @@
   justify-content: space-evenly;
   height: 3.8rem;
   align-items: center;
-  border-bottom: 1px solid #333;
-  box-shadow: 0px 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   position: fixed;
   background: white;
   top: 0;
@@ -27,6 +27,22 @@
       &:hover {
         opacity: 0.8;
         border-color: #2f5ffd;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    .colContent {
+      &:first-child {
+        display: none;
+      }
+      text-align: left;
+      padding: 0 1rem;
+    }
+    .btn {
+      &:nth-child(2) {
+        display: none;
       }
     }
   }
