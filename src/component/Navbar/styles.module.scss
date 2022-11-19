@@ -14,7 +14,23 @@
   color: white;
   transition: all 1s;
   font-weight: bold;
-
+  .overlay {
+    position: fixed; /* Sit on top of the page content */
+    // display: none; /* Hidden by default */
+    width: 100vw; /* Full width (cover the whole page) */
+    height: 100vh; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff; /* Black background with opacity */
+    z-index: 20; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    transition: all 1s;
+    .btnX {
+      margin-top: 50%;
+    }
+  }
   .colContent {
     a {
       text-decoration: none;
@@ -42,7 +58,7 @@
       display: none;
       width: 2rem;
       img {
-        padding-right: 5px;
+        padding-right: 3px;
         width: 100%;
       }
       // flex-wrap: nowrap;
@@ -62,12 +78,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .colContent {
-    .menuIcon {
-      display: inline-block;
-    }
-    &:first-child {
-      display: none;
+  .navContainer {
+    .colContent {
+      .menuIcon {
+        display: inline-block;
+      }
+      &:first-child {
+        display: none;
+      }
     }
   }
 }
