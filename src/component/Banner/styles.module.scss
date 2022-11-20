@@ -10,10 +10,10 @@
 
     // animation: animate 3s ease-in-out infinite alternate-reverse forwards;
     animation-name: animate;
-    animation-direction: alternate-reverse;
+    animation-direction: normal;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
-    animation-duration: 15s;
+    animation-duration: 20s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
 
@@ -55,11 +55,14 @@
     0% {
       background-image: url("../../../public/images/slide_1.jpg");
     }
-    50% {
+    25% {
       background-image: url("../../../public/images/slide_2.jpg");
     }
-    100% {
+    75% {
       background-image: url("../../../public/images/slide_3.jpg");
+    }
+    100% {
+      background-image: url("../../../public/images/slide_1.jpg");
     }
   }
 }
